@@ -1,0 +1,30 @@
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(249, 225, 197);
+
+    img {
+        height: 100px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        width: 300px;
+        justify-content: center;
+
+        li {
+            margin: 0 10px;
+            height: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+}

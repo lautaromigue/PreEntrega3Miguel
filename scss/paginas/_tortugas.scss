@@ -1,0 +1,66 @@
+
+.seccion-tortugas{
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.seccion-tortugas {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "imagenes-tortuga-1"
+    "imagenes-tortuga-2"
+    "imagenes-tortuga-3"
+    "imagenes-tortuga-4"
+    "imagenes-tortuga-5";
+  }
+  
+  .imagenes-tortuga-1 { grid-area: imagenes-tortuga-1; }
+  
+  .imagenes-tortuga-2 { grid-area: imagenes-tortuga-2; }
+  
+  .imagenes-tortuga-3 { grid-area: imagenes-tortuga-3; }
+  
+  .imagenes-tortuga-4 { grid-area: imagenes-tortuga-4; }
+  
+  .imagenes-tortuga-5 { grid-area: imagenes-tortuga-5; }
+
+.imagenes-tortuga-3 img {
+    display: flex;
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+}
+
+.imagenes-tortuga-4 img {
+    display: flex;
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+}
+
+.imagenes-tortuga-5 img {
+    display: flex;
+    margin: 10px;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+}
+
+/* Estrategia Responsive = Mobile First */
+
+@media(min-width: 1110px){
+    .seccion-tortugas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "imagenes-tortuga-1 imagenes-tortuga-2 imagenes-tortuga-3"
+        "imagenes-tortuga-1 imagenes-tortuga-4 imagenes-tortuga-5";
+    }
+}
