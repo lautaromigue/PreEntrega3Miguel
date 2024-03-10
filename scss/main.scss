@@ -1,6 +1,15 @@
+// UTILIDADES
 @import './assets/reset';
+@import './assets/extend';
+
+
+// SECCIONES
 @import './sections/nav';
 @import './sections/main-index';
+@import './sections/footer';
+
+
+// PAGINAS
 @import './paginas/gatos.scss';
 @import './paginas/perros.scss';
 @import './paginas/tortugas.scss';

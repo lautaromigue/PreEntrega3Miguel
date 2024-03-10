@@ -3,6 +3,13 @@
   padding: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
+.css-imagenes, .imagenes-gato-1 img, .imagenes-gato-2 img, .imagenes-perro-1 img, .imagenes-perro-2 img, .imagenes-tortuga-1 img, .imagenes-tortuga-2 img {
+  display: flex;
+  margin: 10px;
+  height: 250px;
+  padding: 10px;
+  align-content: center; }
+
 .navegacion {
   display: flex;
   flex-direction: column;
@@ -77,49 +84,6 @@
 .imagenes-tortuga-2 {
   grid-area: imagenes-tortuga-2; }
 
-.imagenes-gato-1 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px;
-  align-content: center; }
-
-.imagenes-gato-2 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-perro-1 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-perro-2 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-tortuga-1 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-tortuga-2 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
 /* Estrategia Responsive = Mobile First */
 @media (min-width: 671px) {
   .seccion1 {
@@ -127,6 +91,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "imagenes-gato-1 imagenes-gato-2" "imagenes-perro-1 imagenes-perro-2" "imagenes-tortuga-1 imagenes-tortuga-2"; } }
+
+/* Footer */
+.footer {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center; }
 
 .seccion-gatos div {
   display: flex;
