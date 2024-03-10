@@ -4,6 +4,11 @@
         display: flex;
         align-items: center;
     }
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(169, 166, 166);
+    }
 }
 
 
@@ -50,6 +55,13 @@
     width: 350px;
     height: 250px;
     padding: 10px;
+}
+
+.cuidado {
+    img {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 /* Estrategia Responsive = Mobile First */

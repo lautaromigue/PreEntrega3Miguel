@@ -1,63 +1,82 @@
-.seccion-perros{
-    div{
+.seccion-perros {
+    div {
         display: flex;
         align-items: center;
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(169, 166, 166);
     }
 }
 
 
-.seccion-perros {  
+.seccion-perros {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "imagenes-perro-1"
-    "imagenes-perro-2"
-    "imagenes-perro-3"
-    "imagenes-perro-4"
-    "imagenes-perro-5";
-  }
-  
-  .imagenes-perro-1 { grid-area: imagenes-perro-1; }
-  
-  .imagenes-perro-2 { grid-area: imagenes-perro-2; }
-  
-  .imagenes-perro-3 { grid-area: imagenes-perro-3; }
-  
-  .imagenes-perro-4 { grid-area: imagenes-perro-4; }
-  
-  .imagenes-perro-5 { grid-area: imagenes-perro-5; }
-
-.imagenes-perro-3 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
+        "imagenes-perro-1"
+        "imagenes-perro-2"
+        "imagenes-perro-3"
+        "imagenes-perro-4"
+        "imagenes-perro-5";
 }
 
-.imagenes-perro-4 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
+.imagenes-perro-1 {
+    grid-area: imagenes-perro-1;
 }
 
-.imagenes-perro-5 img {
-    display: flex;
-    margin: 10px;
-    width: 350px;
-    height: 250px;
-    padding: 10px;
+.imagenes-perro-2 {
+    grid-area: imagenes-perro-2;
 }
 
-@media(min-width: 1110px){
-    .seccion-perros{
+.imagenes-perro-3 {
+    grid-area: imagenes-perro-3;
+}
+
+.imagenes-perro-4 {
+    grid-area: imagenes-perro-4;
+}
+
+.imagenes-perro-5 {
+    grid-area: imagenes-perro-5;
+}
+
+.imagenes-perro-3{
+    img {
+        @extend .css-imagenes;
+    }
+}
+
+.imagenes-perro-4{
+    img {
+        @extend .css-imagenes;
+    }
+}
+
+.imagenes-perro-5{
+    img {
+        @extend .css-imagenes;
+    }
+}
+
+.cuidado {
+    img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+/* Estrategia Responsive = Mobile First */
+
+@media(min-width: 1110px) {
+    .seccion-perros {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-        "imagenes-perro-1 imagenes-perro-2 imagenes-perro-3"
-        "imagenes-perro-1 imagenes-perro-4 imagenes-perro-5";
+            "imagenes-perro-1 imagenes-perro-2 imagenes-perro-3"
+            "imagenes-perro-1 imagenes-perro-4 imagenes-perro-5";
     }
 }
