@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-.css-imagenes, .imagenes-gato-1 img, .imagenes-gato-2 img, .imagenes-perro-1 img, .imagenes-perro-2 img, .imagenes-tortuga-1 img, .imagenes-tortuga-2 img {
+.css-imagenes, .imagenes-gato-1 img, .imagenes-gato-2 img, .imagenes-perro-1 img, .imagenes-perro-2 img, .imagenes-tortuga-1 img, .imagenes-tortuga-2 img, .cuidado-perro img, .cuidado-tortuga img, .imagenes-gato-3 img, .imagenes-gato-4 img, .imagenes-gato-5 img {
   display: flex;
   margin: 10px;
   height: 250px;
@@ -31,13 +31,29 @@
         .navegacion ul li a:hover {
           color: white; }
 
+.texto-principal {
+  background-color: beige;
+  font-size: 30px;
+  text-align: center; }
+
+.descripcion-seccion {
+  font-size: 20px;
+  text-align: center;
+  background-color: cadetblue;
+  color: white; }
+
+.texto-secundario {
+  text-align: center;
+  font-size: 30px;
+  color: #efc494; }
+
 .seccion1 div {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .seccion1 div img {
-    float: left;
-    margin-right: 10px; }
+  .seccion1 div article {
+    display: flex;
+    flex-direction: column; }
 
 .seccion1 p {
   text-align: center;
@@ -49,16 +65,6 @@
   align-items: center; }
   .gato-texto-1 img {
     margin-right: 10px; }
-
-.texto-principal {
-  background-color: beige;
-  font-size: 20px;
-  text-align: center; }
-
-.texto-secundario {
-  text-align: center;
-  font-size: 30px;
-  color: #efc494; }
 
 /* Estilos seccion1 */
 .seccion1 {
@@ -83,6 +89,53 @@
 
 .imagenes-tortuga-2 {
   grid-area: imagenes-tortuga-2; }
+
+.cuidado div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .cuidado div article {
+    display: flex;
+    flex-direction: column; }
+
+.cuidado p {
+  text-align: center;
+  font-size: 20px;
+  color: #a9a6a6; }
+
+.cuidado-gato img {
+  display: flex;
+  margin: 10px;
+  height: 250px;
+  padding: 10px;
+  align-content: center; }
+
+.block {
+  width: 200px;
+  height: 100px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000; }
+  .block .text-space {
+    height: 50px;
+    width: 100%; }
+
+.links-paginas {
+  display: flex;
+  justify-content: space-evenly; }
+  .links-paginas div {
+    background-color: #fff2ef; }
+  .links-paginas li {
+    list-style: none; }
+    .links-paginas li a {
+      color: rgba(109, 158, 70, 0.592); }
+
+h3 {
+  background-color: greenyellow; }
 
 /* Estrategia Responsive = Mobile First */
 @media (min-width: 671px) {
@@ -122,26 +175,9 @@
 .imagenes-gato-5 {
   grid-area: imagenes-gato-5; }
 
-.imagenes-gato-3 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-gato-4 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
-
-.imagenes-gato-5 img {
-  display: flex;
-  margin: 10px;
-  width: 350px;
-  height: 250px;
-  padding: 10px; }
+.cuidado img {
+  width: 500px;
+  height: 300px; }
 
 /* Estrategia Responsive = Mobile First */
 @media (min-width: 1110px) {
