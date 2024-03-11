@@ -1,4 +1,12 @@
 .seccion-gatos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "imagenes-gato-1"
+        "imagenes-gato-2"
+        "imagenes-gato-3"
+        "imagenes-gato-4"
+        "imagenes-gato-5";
     div {
         display: flex;
         align-items: center;
@@ -8,17 +16,6 @@
         font-size: 20px;
         color: rgb(169, 166, 166);
     }
-}
-
-.seccion-gatos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "imagenes-gato-1"
-        "imagenes-gato-2"
-        "imagenes-gato-3"
-        "imagenes-gato-4"
-        "imagenes-gato-5";
 }
 
 .imagenes-gato-1 {
